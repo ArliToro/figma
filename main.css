@@ -1,0 +1,174 @@
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pos-r {
+    position: relative;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.main-padd {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    background-color: rgb(4, 35, 149);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header .nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+header .nav div img {
+    width: 40px;
+    display: none;
+}
+
+header .nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav nav ul li {
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.nav nav ul li a {
+    color: white;
+}
+
+.title h1 {
+    padding: 100px 0;
+    font-size: 4vw;
+    color: rgb(113, 152, 248);
+    font-weight: 100;
+}
+
+.title h1 span {
+    color: white;
+}
+
+.scroll {
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(113, 152, 248);
+}
+
+.scroll img {
+    width: 40px;
+}
+
+main {
+    background-color: rgb(4, 35, 149);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.triple-circle {
+    height: 45vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triple-circle > div {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.triple-circle > div:nth-child(1) {
+    width: 12vw;
+    height: 12vw;
+    background-color: rgb(255, 206, 123);
+}
+
+.triple-circle > div:nth-child(2) {
+    width: 16vw;
+    height: 16vw;
+    background-color: rgb(255, 206, 123);
+    transform: scale(0.75);
+}
+
+.triple-circle > div:nth-child(3) {
+    width: 24vw;
+    height: 24vw;
+    background-color: rgb(243, 175, 61);
+    transform: scale(0.5);
+}
+
+.triple-circle-info > h2{
+    font-size: 3.5vw;
+}
+.triple-circle-info > h3{
+    font-size: 3vw;
+    color: rgb(113, 152, 248);
+    padding-bottom: 50px;
+}
+
+.evolution-esg > h3 {
+    color: rgb(243,175,61);
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+    font-size: 2.5vw;
+}
+
+.evolution-esg > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.evolution-esg > div div {
+    padding-right: 50px;
+}
+
+.evolution-esg > div h3 {
+    padding: 20px 0;
+    font-size: 2.5vw;
+}
+
+
