@@ -31,11 +31,15 @@ a {
     padding-right: 10%;
 }
 
-header {
-    background-color: rgb(4, 35, 149);
+header .homepage-header, header .launch-rift-header {
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: rgb(4, 35, 149);
+}
+
+header .launch-rift-header {
+    background-color: #4065F6;
 }
 
 header .nav div {
@@ -207,7 +211,7 @@ main {
     color: rgb(20, 51, 164);
 }
 
-.impact-image p span{
+.impact-image p span {
     color: rgb(4, 35, 149);
     font-weight: bold;
 }
@@ -246,7 +250,7 @@ main {
     display: flex;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-color: rgb(14,58,221);
+    background-color: rgb(14, 58, 221);
 }
 
 .different-ambitious-animation {
@@ -259,7 +263,7 @@ main {
     color: white;
 }
 
-.different-ambitious-animation svg{
+.different-ambitious-animation svg {
     max-width: 100%;
 }
 
@@ -325,7 +329,7 @@ main {
     border: 10px solid rgb(113, 152, 248);
     padding: 40px 10px 0 10px;
     background-color: white;
-    color: rgb(14,58,221);
+    color: rgb(14, 58, 221);
     margin-left: 20px;
 }
 
@@ -352,7 +356,7 @@ main {
 }
 
 .contact h2 span {
-    color: rgb(14,58,221);
+    color: rgb(14, 58, 221);
 }
 
 .contact form {
@@ -377,22 +381,144 @@ main {
 }
 
 .contact form button {
-    background-color: rgb(14,58,221);
+    background-color: rgb(14, 58, 221);
     padding: 15px 50px;
     color: white;
     border: unset;
     font-size: 18px;
 }
 
+.rift-title {
+    font-size: 13vw;
+}
+
+.rift-title h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.rift-title .under-text {
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .4);
+}
+
+.rift-title .over-text {
+    z-index: 2;
+    color: rgba(243, 175, 61, .8);
+}
+
+.launch-rift-container {
+    background-color: #4065F6;
+    padding-top: 50px;
+}
+
+.launch-rift-container > h2 {
+    color: rgb(4, 35, 149);
+    font-size: 3vw;
+}
+
+.average {
+    padding-top: 50px;
+}
+
+.average > h3 {
+    color: rgb(243, 175, 61);
+    margin-bottom: 25px;
+}
+
+.average-items {
+    position: relative;
+    width: 100%;
+}
+
+.average-items > div {
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+}
+
+.average-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    border-bottom: 3px solid rgba(255,255,255,0);
+    border-top: 3px solid rgba(255,255,255,0);
+    transition: .2s;
+}
+
+.average-content:hover {
+    border-bottom: 3px solid rgba(255,255,255,1);
+    border-top: 3px solid rgba(255,255,255,1);
+}
+
+.average-details {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.average-details > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10% 60px 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.average-details > div > img {
+    height: 300px;
+}
+
+.average-details-content h3 {
+    color: rgb(14, 58, 221);
+}
+
+.average-details-content h3 span {
+    color: rgb(64, 101, 246);
+}
+
+.average-details-content button {
+    margin-top: 50px;
+    background-color: rgb(14, 58, 221);
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    outline: none;
+}
+
+.close-average {
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 9%;
+    color: rgb(64, 101, 246);
+}
+
+.close-average img {
+    width: 50px;
+    margin-left: 15px;
+}
+
 footer {
-    background-color: rgb(14,58,221);
+    background-color: rgb(14, 58, 221);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
 }
 
@@ -403,11 +529,11 @@ footer {
 
 .footer-nav ul li {
     list-style-type: none;
-    color:  rgb(113, 152, 248);
+    color: rgb(113, 152, 248);
     margin-bottom: 15px;
 }
 
-.footer-closing{
+.footer-closing {
     padding-top: 250px;
 }
 
