@@ -100,8 +100,6 @@ header .nav nav {
 main {
     background-color: rgb(4, 35, 149);
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .triple-circle {
@@ -130,27 +128,31 @@ main {
     width: 16vw;
     height: 16vw;
     background-color: rgb(255, 206, 123);
-    transform: scale(0.75);
 }
 
 .triple-circle > div:nth-child(3) {
     width: 24vw;
     height: 24vw;
     background-color: rgb(243, 175, 61);
-    transform: scale(0.5);
 }
 
-.triple-circle-info > h2{
+.triple-circle-info {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.triple-circle-info > h2 {
     font-size: 3.5vw;
 }
-.triple-circle-info > h3{
+
+.triple-circle-info > h3 {
     font-size: 3vw;
     color: rgb(113, 152, 248);
     padding-bottom: 50px;
 }
 
 .evolution-esg > h3 {
-    color: rgb(243,175,61);
+    color: rgb(243, 175, 61);
     padding: 20px 0;
     border-bottom: 1px solid white;
     font-size: 2.5vw;
@@ -171,4 +173,268 @@ main {
     font-size: 2.5vw;
 }
 
+.impact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
 
+.impact .impact-text {
+    display: flex;
+    align-items: flex-end;
+    color: rgb(4, 35, 149);
+}
+
+.impact-text h2 {
+    flex: 0 0 35%;
+    font-size: 3.5vw;
+    margin-right: 10%;
+}
+
+.impact-text p {
+    font-size: 24px;
+}
+
+.impact .impact-image {
+    padding-top: 50px;
+}
+
+.impact-image img {
+    width: 60%;
+}
+
+.impact-image p {
+    color: rgb(20, 51, 164);
+}
+
+.impact-image p span{
+    color: rgb(4, 35, 149);
+    font-weight: bold;
+}
+
+.real-impact {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.real-impact-content {
+    flex: 0 0 45%;
+    color: white;
+}
+
+.real-impact-content h2 {
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}
+
+.real-impact-content h3 {
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+}
+
+.real-impact-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.real-impact-animation {
+    flex: 0 0 55%;
+}
+
+.different-ambitious {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: rgb(14,58,221);
+}
+
+.different-ambitious-animation {
+    flex: 0 0 55%;
+    padding-right: 50px;
+}
+
+.different-ambitious-content {
+    flex: 0 0 45%;
+    color: white;
+}
+
+.different-ambitious-animation svg{
+    max-width: 100%;
+}
+
+.different-ambitious-animation svg .fade-in {
+    display: block;
+    transition: .8s;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+}
+
+.different-ambitious-animation svg:hover .fade-in {
+    transform: scale(1);
+}
+
+.different-ambitious-content h2 {
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}
+
+.different-ambitious-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.different-ambitious-content p:last-child {
+    color: rgb(243, 175, 61);
+}
+
+.focus {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.focus-content {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.focus-content h2 {
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+}
+
+.focus-content p {
+    font-size: 18px;
+    width: 50%;
+}
+
+.focus-animation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.focus-animation-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus-animation-content > div {
+    width: 250px;
+    height: 250px;
+    border: 10px solid rgb(113, 152, 248);
+    padding: 40px 10px 0 10px;
+    background-color: white;
+    color: rgb(14,58,221);
+    margin-left: 20px;
+}
+
+.focus-animation-content > div:last-child {
+    border: 10px solid rgb(243, 175, 61);
+    color: rgb(243, 175, 61);
+    margin-left: 0;
+}
+
+.focus-animation-content > img {
+    width: 80px;
+    margin: 0 30px;
+}
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(113, 152, 248);
+    color: white;
+}
+
+.contact h2 {
+    font-size: 3.5vw;
+}
+
+.contact h2 span {
+    color: rgb(14,58,221);
+}
+
+.contact form {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 20px;
+}
+
+.contact form input {
+    width: 100%;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact form button {
+    background-color: rgb(14,58,221);
+    padding: 15px 50px;
+    color: white;
+    border: unset;
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(14,58,221);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 50px;
+}
+
+.footer-nav h4 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.footer-nav ul li {
+    list-style-type: none;
+    color:  rgb(113, 152, 248);
+    margin-bottom: 15px;
+}
+
+.footer-closing{
+    padding-top: 250px;
+}
+
+.footer-closing h3 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+
+.footer-closing div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer-closing div ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-closing div ul li {
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.footer-closing div ul li a {
+    color: white;
+}
