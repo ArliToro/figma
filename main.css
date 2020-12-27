@@ -510,6 +510,47 @@ main {
     margin-left: 15px;
 }
 
+.transforming {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transforming > img {
+    width: 100%;
+}
+
+.transforming h2 {
+    font-size: 3vw;
+    color: white;
+}
+
+.transforming h3 {
+    color: rgb(113, 152, 248);
+    font-size: 2vw;
+}
+
+.rift-circle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.rift-circle svg {
+    width: 50%;
+}
+
+.rift-circle svg .rift-circle {
+    opacity: 0;
+    transition: .2s;
+}
+
+.rift-circle svg:hover .rift-circle {
+    opacity: 1;
+}
+
 footer {
     background-color: rgb(14, 58, 221);
     padding-top: 50px;
