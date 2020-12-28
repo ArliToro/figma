@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,6 +10,14 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+<div id="loader" style="width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: .2s;"></div>
 <header class="w-100 pos-r">
     <section class="homepage-header main-padd w-100 pos-r">
         <section class="nav w-100">
@@ -28,7 +37,7 @@
             </nav>
         </section>
         <section class="title w-100">
-            <h1>
+            <h1 class="animated-content title-onscroll">
                 <span>Empowering capitalism to really <br> have free and fair markets. </span><br>
                 We want to revolutionize the way businesse calculate their success. We have
                 aligned our efforst with the impact Weight Accounts Initiative to be the first ever
@@ -42,19 +51,19 @@
         </div>
     </section>
 </header>
-<main class="main-padd w-100">
-    <section class="transforming">
+<main class="w-100">
+    <section class="transforming main-padd w-100">
         <img src="images/screenshot.PNG" alt="">
         <div>
-            <h2>Transforming the decision making process.</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <h2 class="animated-content title-onscroll">Transforming the decision making process.</h2>
+            <h3 class="animated-content title-onscroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris</h3>
         </div>
     </section>
-    <section class="rift-circle">
+    <section class="rift-circle-animation animated-content main-padd w-100">
         <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
              x="0px" y="0px" viewBox="0 0 402.668 396" enable-background="new 0 0 402.668 396"
@@ -207,6 +216,41 @@
 
 
     </section>
+    <section class="contact main-padd w-100 pos-r">
+        <h2>Ready to get started?<br>
+            <span>Request a demo.</span>
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <form action="" class="w-100">
+            <div>
+                <input type="text">
+                <label>COMPANY NAME</label>
+            </div>
+            <div>
+                <input type="text">
+                <label>NAME</label>
+            </div>
+            <div>
+                <input type="text">
+                <label>CITY</label>
+            </div>
+            <div>
+                <input type="text">
+                <label>COUNTRY</label>
+            </div>
+            <div>
+                <input type="text">
+                <label>EMAIL</label>
+            </div>
+            <div>
+                <input type="text">
+                <label>PHONE</label>
+            </div>
+            <div>
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+    </section>
 </main>
 <footer class="w-100 pos-r main-padd">
     <section class="footer-nav">
@@ -270,5 +314,6 @@
         </div>
     </section>
 </footer>
+<script src="about.js"></script>
 </body>
 </html>

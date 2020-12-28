@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,6 +10,14 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+<div id="loader" style="width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: .2s;"></div>
 <header class="w-100 pos-r">
     <section class="launch-rift-header main-padd w-100 pos-r">
         <section class="nav w-100">
@@ -28,11 +37,11 @@
             </nav>
         </section>
         <section class="title w-100">
-            <h1>
+            <h1 class="animated-content title-onscroll">
                 <span>Real Impact in<br> Financial Terms (RIFT)</span><br>
             </h1>
         </section>
-        <section class="rift-title w-100 pos-r">
+        <section class="rift-title animated-content w-100 pos-r">
             <h2 class="under-text pos-a">$ 0.13</h2>
             <h2 class="over-text pos-r">$ 1.20</h2>
         </section>
@@ -43,7 +52,7 @@
     </section>
 </header>
 <section class="launch-rift-container pos-r w-100">
-    <h2 class="w-100 main-padd">
+    <h2 class="w-100 main-padd animated-content title-onscroll">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -53,9 +62,9 @@
     <section class="average w-100">
         <h3 class="w-100 main-padd">Average product impact per $ of revenue</h3>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(113, 152, 248);">
+            <div class="average-content animated-content" style="background-color: rgb(113, 152, 248);">
                 <h4>Water Utilities</h4>
-                <h3 realvalue="0.48">$0.00</h3>
+                <h3 realvalue="0.48">0.00</h3>
             </div>
             <div class="average-details">
                 <div>
@@ -80,9 +89,9 @@
             </div>
         </div>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(64, 101, 246);">
+            <div class="average-content animated-content" style="background-color: rgb(64, 101, 246);">
                 <h4>Banks</h4>
-                <h3 realvalue="0.02">$0.00</h3>
+                <h3 realvalue="0.02">0.00</h3>
             </div>
             <div class="average-details">
                 <div>
@@ -107,9 +116,9 @@
             </div>
         </div>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(14, 58, 221);">
+            <div class="average-content animated-content" style="background-color: rgb(14, 58, 221);">
                 <h4>Oil&Gas</h4>
-                <h3 realvalue="-2.90">$0.00</h3>
+                <h3 realvalue="-2.90">0.00</h3>
             </div>
             <div class="average-details">
                 <div>
@@ -134,9 +143,9 @@
             </div>
         </div>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(113, 152, 248);">
+            <div class="average-content animated-content" style="background-color: rgb(113, 152, 248);">
                 <h4>Alcohol</h4>
-                <h3 realvalue="1.70">$0.00</h3>
+                <h3 realvalue="1.70">0.00</h3>
             </div>
             <div class="average-details">
                 <div>
@@ -161,9 +170,9 @@
             </div>
         </div>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(64, 101, 246);">
+            <div class="average-content animated-content" style="background-color: rgb(64, 101, 246);">
                 <h4>Consumer Finance</h4>
-                <h3 realvalue="-0.21">$0.00</h3>
+                <h3 realvalue="-0.21">0.00</h3>
             </div>
             <div class="average-details">
                 <div class="pos-r">
@@ -188,9 +197,9 @@
             </div>
         </div>
         <div class="average-items">
-            <div class="average-content" style="background-color: rgb(14, 58, 221);">
+            <div class="average-content animated-content" style="background-color: rgb(14, 58, 221);">
                 <h4>Automotive</h4>
-                <h3 realvalue="0.04">$0.00</h3>
+                <h3 realvalue="0.04">0.00</h3>
             </div>
             <div class="average-details">
                 <div class="pos-r">
@@ -313,5 +322,6 @@
         </div>
     </section>
 </footer>
+<script src="launch.js"></script>
 </body>
 </html>
